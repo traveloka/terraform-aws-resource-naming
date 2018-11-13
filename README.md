@@ -36,6 +36,7 @@ Supported Resources
 * s3_bucket
 * sns_topic
 * sqs_queue
+* fifo_sqs_queue
 
 
 Contributing

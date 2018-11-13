@@ -14,6 +14,9 @@ locals {
 
   random_max_byte_length = "${(local.resource_max_character_length - length(local.prefix)) / 2}"
   random_byte_length     = "${min(local.max_byte_length, local.random_max_byte_length)}"
+
+  suffix_for_resource_name = "${lookup(local.mandatory_suffix_for_resource_name, var.resource_type, "")}"
+  final_name               = "${format("%s%s", random_id.this.hex, local.suffix_for_resource_name)}"
 }
 
 # Null Provider. This module was created on 2018/04/10

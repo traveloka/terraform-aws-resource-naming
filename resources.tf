@@ -30,5 +30,10 @@ locals {
     "security_group"        = 255 # https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateSecurityGroup.html
     "sns_topic"             = 256 # https://docs.aws.amazon.com/sns/latest/api/API_CreateTopic.html
     "sqs_queue"             = 80  # https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_CreateQueue.html
+    "fifo_sqs_queue"        = 75  #https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/FIFO-queues.html
+  }
+
+  mandatory_suffix_for_resource_name = {
+    fifo_sqs_queue          = ".fifo"
   }
 }
