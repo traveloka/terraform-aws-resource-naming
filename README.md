@@ -38,10 +38,34 @@ Supported Resources
 * launch_configuration
 * lb
 * lb_target_group
-* security_group
 * s3_bucket
+* security_group
 * sns_topic
 * sqs_queue
+* waf_byte_match_set
+* waf_geo_match_set
+* waf_ipset
+* waf_rate_based_rule
+* waf_regex_match_set
+* waf_regex_pattern_set
+* waf_rule
+* waf_rule_group
+* waf_size_constraint_set
+* waf_sql_injection_match_set
+* waf_web_acl
+* waf_xss_match_set
+* wafregional_byte_match_set
+* wafregional_geo_match_set
+* wafregional_ipset
+* wafregional_rate_based_rule
+* wafregional_regex_match_set
+* wafregional_regex_pattern_set
+* wafregional_rule
+* wafregional_rule_group
+* wafregional_size_constraint_set
+* wafregional_sql_injection_match_set
+* wafregional_web_acl
+* wafregional_xss_match_set
 
 
 Contributing
