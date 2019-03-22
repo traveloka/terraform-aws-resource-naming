@@ -28,6 +28,7 @@ locals {
     "iam_instance_profile"                = "128" # https://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateInstanceProfile.html
     "iam_role"                            = "64"  # https://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateRole.html
     "key_pair"                            = "255" # https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateKeyPair.html
+    "kinesis_firehose_delivery_stream"    = "64"  # https://docs.aws.amazon.com/firehose/latest/APIReference/API_CreateDeliveryStream.html
     "lambda_function"                     = "140" # https://docs.aws.amazon.com/lambda/latest/dg/API_CreateFunction.html
     "launch_configuration"                = "255" # https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_CreateLaunchConfiguration.html
     "lb"                                  = "32"  # https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_CreateLoadBalancer.html

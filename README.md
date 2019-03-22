@@ -34,6 +34,7 @@ Supported Resources
 * iam_instance_profile
 * iam_role
 * key_pair
+* kinesis_firehose_delivery_stream
 * lambda_function
 * launch_configuration
 * lb
