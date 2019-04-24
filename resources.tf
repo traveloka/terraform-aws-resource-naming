@@ -11,7 +11,6 @@ locals {
   # * aws_s3_bucket (https://www.terraform.io/docs/providers/aws/r/s3_bucket.html)                   -->  s3_bucket
   max_character_length = {
     "autoscaling_group"                   = "255" # https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_CreateAutoScalingGroup.html
-    "autoscaling_policy"                  = "255" # https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_PutScalingPolicy.html
     "cloudwatch_event_rule"               = "64"  # https://docs.aws.amazon.com/AmazonCloudWatchEvents/latest/APIReference/API_Rule.html
     "cloudwatch_log_group"                = "512" # https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_CreateLogGroup.html
     "codebuild_project"                   = "255" # https://docs.aws.amazon.com/codebuild/latest/APIReference/API_CreateProject.html#CodeBuild-CreateProject-request-name
@@ -34,6 +33,8 @@ locals {
     "lb"                                  = "32"  # https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_CreateLoadBalancer.html
     "lb_target_group"                     = "32"  # https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_CreateTargetGroup.html
     "s3_bucket"                           = "63"  # https://docs.aws.amazon.com/AmazonS3/latest/dev/BucketRestrictions.html
+    "scaling_policy"                      = "255" # https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_PutScalingPolicy.html
+    "sceduled_action"                     = "255" # https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_PutScheduledUpdateGroupAction.html
     "security_group"                      = "255" # https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateSecurityGroup.html
     "sns_topic"                           = "256" # https://docs.aws.amazon.com/sns/latest/api/API_CreateTopic.html
     "sqs_queue"                           = "80"  # https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_CreateQueue.html
