@@ -18,6 +18,7 @@ Supported Resources
 -------------------
 * autoscaling_group
 * autoscaling_policy
+* autoscaling_schedule
 * cloudwatch_event_rule
 * cloudwatch_log_group
 * codebuild_project
