@@ -22,6 +22,8 @@ Supported Resources
 * cloudwatch_event_rule
 * cloudwatch_log_group
 * codebuild_project
+* codecommit_repository
+* codepipeline
 * db_instance
 * db_parameter_group
 * dynamodb_table

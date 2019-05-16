@@ -16,6 +16,8 @@ locals {
     "cloudwatch_event_rule"               = "64"  # https://docs.aws.amazon.com/AmazonCloudWatchEvents/latest/APIReference/API_Rule.html
     "cloudwatch_log_group"                = "512" # https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_CreateLogGroup.html
     "codebuild_project"                   = "255" # https://docs.aws.amazon.com/codebuild/latest/APIReference/API_CreateProject.html#CodeBuild-CreateProject-request-name
+    "codecommit_repository"               = "100" # https://docs.aws.amazon.com/codecommit/latest/APIReference/API_CreateRepository.html#CodeCommit-CreateRepository-request-repositoryName
+    "codepipeline"                        = "100" # https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_PipelineDeclaration.html#CodePipeline-Type-PipelineDeclaration-name
     "db_instance"                         = "63"  # https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBInstance.html
     "db_parameter_group"                  = "255" # https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBParameterGroup.html
     "dynamodb_table"                      = "255" # https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_CreateTable.html
