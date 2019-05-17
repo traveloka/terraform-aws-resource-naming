@@ -15,6 +15,7 @@ locals {
     "autoscaling_schedule"                = "255" # https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_PutScheduledUpdateGroupAction.html
     "cloudwatch_event_rule"               = "64"  # https://docs.aws.amazon.com/AmazonCloudWatchEvents/latest/APIReference/API_Rule.html
     "cloudwatch_log_group"                = "512" # https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_CreateLogGroup.html
+    "cloudwatch_metric_alarm"             = "255" # https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_PutMetricAlarm.html
     "codebuild_project"                   = "255" # https://docs.aws.amazon.com/codebuild/latest/APIReference/API_CreateProject.html#CodeBuild-CreateProject-request-name
     "codecommit_repository"               = "100" # https://docs.aws.amazon.com/codecommit/latest/APIReference/API_CreateRepository.html#CodeCommit-CreateRepository-request-repositoryName
     "codepipeline"                        = "100" # https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_PipelineDeclaration.html#CodePipeline-Type-PipelineDeclaration-name
@@ -30,6 +31,7 @@ locals {
     "elasticsearch_domain"                = "28"  # https://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/es-createupdatedomains.html#es-createdomains
     "iam_instance_profile"                = "128" # https://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateInstanceProfile.html
     "iam_role"                            = "64"  # https://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateRole.html
+    "instance"                            = "255" # https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Tag.html
     "key_pair"                            = "255" # https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateKeyPair.html
     "kinesis_firehose_delivery_stream"    = "64"  # https://docs.aws.amazon.com/firehose/latest/APIReference/API_CreateDeliveryStream.html
     "lambda_function"                     = "140" # https://docs.aws.amazon.com/lambda/latest/dg/API_CreateFunction.html

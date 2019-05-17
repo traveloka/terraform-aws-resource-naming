@@ -21,6 +21,7 @@ Supported Resources
 * autoscaling_schedule
 * cloudwatch_event_rule
 * cloudwatch_log_group
+* cloudwatch_metric_alarm
 * codebuild_project
 * codecommit_repository
 * codepipeline
@@ -36,6 +37,7 @@ Supported Resources
 * elasticsearch_domain
 * iam_instance_profile
 * iam_role
+* instance
 * key_pair
 * kinesis_firehose_delivery_stream
 * lambda_function
