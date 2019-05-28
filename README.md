@@ -85,8 +85,8 @@ Don't forget to also add the resource that you added to [Supported Resources lis
 
 Terraform Version
 -----------------
-This module was created using Terraform 0.11.6. 
-So to be more safe, Terraform version 0.11.6 or newer is required to use this module.
+This module was originally created using Terraform 0.11.6.
+Terraform version 0.11.6 or newer is required to use this module.
 
 
 Authors
