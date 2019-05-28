@@ -18,12 +18,12 @@ locals {
 
 # Null Provider. This module was created on 2018/04/10
 provider "null" {
-  version = "~> 1.0.0"
+  version = ">= 1.0.0, < 3.0.0"
 }
 
 # Random Provider. This module was created on 2018/04/10
 provider "random" {
-  version = "~> 1.2.0"
+  version = ">= 1.2.0, < 3.0.0"
 }
 
 # Throws error when resource_type is not suppported by the module yet
