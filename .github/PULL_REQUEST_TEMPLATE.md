@@ -37,7 +37,7 @@ BUG FIXES:
 * feature: Prevent error from blablabla
 ```
 
-Output from `terraform plan` command from your branch after `terraform apply` has been successfully performed on the latest release:
+Output from `terraform plan` command from one of the examples on your branch after `terraform apply` has been successfully performed on the latest release:
 
 ```
 $ terraform plan
