@@ -1,7 +1,7 @@
 # Contributing
 
-NOTES:
-* It is required for all your commits to be signed. To know how to do so, please read: https://help.github.com/en/articles/signing-commits
+**NOTES:**
+* It is required for all of your commits to be signed, otherwise your PR will not be able to be merged. To know how to do so, please read: https://help.github.com/en/articles/signing-commits
 
 You can increase the number of this module's supported resources by adding the information about maximum character allowed for a resource name from AWS.
 
