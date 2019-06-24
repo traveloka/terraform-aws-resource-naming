@@ -1,10 +1,17 @@
 terraform-aws-resource-naming
 =============================
-Terraform module to generate resource name with `random_id` added as suffix.
+For most of the resources, AWS does not allow us to create multiple resources with the same name. That is the reason why we need to make them unique.
+
+This module will help you to generate unique resource name by adding `random_id` value added as suffix to the name prefix you specified. Not just adding, but this module will also calculate how many random characters should be added to the prefix so it will not exceed maximum character allowed from AWS.
+
+NOTES: 
+* If character length of your name prefix already exceed maximum character allowed from AWS, this module will not do anything about it. Executing `terraform apply` will most likely to fail.
 
 
 Usage
 -----
+You need to know what resource you want to provision and how the naming convention is. Then provide the information to this module's variables.
+
 To understand better on how to implement this module, you can go into `examples` folder and try them.
 
 
@@ -76,11 +83,7 @@ Supported Resources
 
 Contributing
 ------------
-You can increase the number of this module's supported resources by adding the information about maximum character allowed for resource naming from AWS.
-
-Open [resources.tf](https://github.com/traveloka/terraform-aws-resource-naming/blob/master/resources.tf) for more information. 
-
-Don't forget to also add the resource that you added to [Supported Resources list](https://github.com/traveloka/terraform-aws-resource-naming#supported-resources)
+Can not see the resource you want to provision on the list above? Open [CONTRIBUTING](CONTRIBUTING.md) to learn how to add it by yourself!
 
 
 Terraform Version

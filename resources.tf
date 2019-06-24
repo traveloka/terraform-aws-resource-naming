@@ -1,14 +1,4 @@
 locals {
-  # `max_character_length` variable needs to be updated each time we want to add support for a resource. 
-  #
-  # Add a resource support by adding the information using this format:   
-  # "<resource_type>" = <maximum_number_of_character_allowed> # <reference>
-  #
-  # The format of `resource_type` is taken from Terraform resource name by omitting `aws_` prefix.
-  # For example:
-  # * aws_db_parameter_group (https://www.terraform.io/docs/providers/aws/r/db_parameter_group.html) -->  db_parameter_group
-  # * aws_lb (https://www.terraform.io/docs/providers/aws/r/lb.html)                                 -->  lb
-  # * aws_s3_bucket (https://www.terraform.io/docs/providers/aws/r/s3_bucket.html)                   -->  s3_bucket
   max_character_length = {
     "autoscaling_group"                   = "255" # https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_CreateAutoScalingGroup.html
     "autoscaling_policy"                  = "255" # https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_PutScalingPolicy.html

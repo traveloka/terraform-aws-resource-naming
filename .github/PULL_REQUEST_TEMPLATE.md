@@ -14,7 +14,7 @@ No need to modify anything within this section.
 Fixes #0000
 
 
-Release note for [CHANGELOG](https://github.com/rafikurnia/sandbox/blob/master/CHANGELOG.md):
+Release note for [CHANGELOG](https://github.com/traveloka/terraform-aws-resource-naming/blob/master/CHANGELOG.md):
 <!--
 If change is not user facing, just write "NONE" in the release-note block below.
 -->
@@ -50,5 +50,5 @@ Credit:
 This template is modified version of https://github.com/terraform-providers/terraform-provider-aws/blob/master/.github/PULL_REQUEST_TEMPLATE.md
 
 Created: May 27, 2019 
-Last updated: -
+Last updated: June 24, 2019
 --->
