@@ -94,9 +94,9 @@ FEATURES:
 
 ## v0.7.1 (May 24, 2018)
 
-FEATURES:
+BUG FIXES:
 
-* **BUG FIXES:** validation will always fail if `name_prefix` contains interpolation or data source
+* validation will always fail if `name_prefix` contains interpolation or data source
 
 ## v0.7.0 (May 8, 2018)
 
