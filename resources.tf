@@ -16,7 +16,7 @@ locals {
     "ecs_cluster"                         = "255" # https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_CreateCluster.html#ECS-CreateCluster-request-clusterName
     "ecs_service"                         = "255" # https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_CreateService.html#ECS-CreateService-request-serviceName
     "ecs_task_definition"                 = "255" # https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_RegisterTaskDefinition.html#ECS-RegisterTaskDefinition-request-family
-    "elasticache_cluster"                 = "20"  # https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/API_CreateCacheCluster.html
+    "elasticache_cluster"                 = "40"  # https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/API_CreateCacheCluster.html
     "elasticache_parameter_group"         = "255" # https://docs.aws.amazon.com/AmazonElastiCache/latest/mem-ug/ParameterGroups.Creating.html
     "elasticsearch_domain"                = "28"  # https://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/es-createupdatedomains.html#es-createdomains
     "iam_instance_profile"                = "128" # https://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateInstanceProfile.html
