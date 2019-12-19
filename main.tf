@@ -19,7 +19,7 @@ locals {
   resource_max_character_length = "${lookup(local.max_character_length, var.resource_type, 0)}"
 
   random_max_byte_length = "${(local.resource_max_character_length - length(local.prefix)) / 2}"
-  random_byte_length     = "${min(local.max_byte_length, local.random_max_byte_length)}"
+  random_byte_length     = "${floor(min(local.max_byte_length, local.random_max_byte_length))}"
 }
 
 # Random Provider. This module was created on 2018/04/10
