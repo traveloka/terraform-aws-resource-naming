@@ -1,3 +1,9 @@
+## v0.17.2 (Unreleased)
+
+ENHANCEMENTS:
+
+* Update README.md ([#40](https://github.com/traveloka/terraform-aws-resource-naming/pull/40))
+
 ## v0.17.1 (Oct 18, 2019)
 
 ENHANCEMENTS:
