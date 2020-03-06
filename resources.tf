@@ -29,6 +29,7 @@ locals {
     "lb"                                  = "32"  # https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_CreateLoadBalancer.html
     "lb_target_group"                     = "32"  # https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference/API_CreateTargetGroup.html
     "s3_bucket"                           = "63"  # https://docs.aws.amazon.com/AmazonS3/latest/dev/BucketRestrictions.html
+    "secretsmanager_secret"               = "256" # https://docs.aws.amazon.com/secretsmanager/latest/userguide/reference_limits.html
     "security_group"                      = "255" # https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateSecurityGroup.html
     "sns_topic"                           = "256" # https://docs.aws.amazon.com/sns/latest/api/API_CreateTopic.html
     "sqs_queue"                           = "80"  # https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_CreateQueue.html

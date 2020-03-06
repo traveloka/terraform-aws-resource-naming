@@ -67,6 +67,7 @@ This module will help you to generate a unique resource name by adding `random_i
 - lb
 - lb_target_group
 - s3_bucket
+- secretsmanager_secret
 - security_group
 - sns_topic
 - sqs_queue
