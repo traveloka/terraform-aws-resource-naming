@@ -24,7 +24,7 @@ locals {
 
 # Provides random id in hex format
 resource "random_id" "this" {
-  prefix      = "${local.prefix}"
-  byte_length = "${local.random_byte_length}"
-  keepers     = "${var.keepers}"
+  prefix      = local.prefix
+  byte_length = local.random_byte_length
+  keepers     = var.keepers
 }
