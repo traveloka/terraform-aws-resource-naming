@@ -13,7 +13,7 @@ locals {
   # * var.name_prefix = "txtdata-app"    -->  prefix = "txtdata-app-"
   # * var.name_prefix = "txtdata-app-"   -->  prefix = "txtdata-app-"
   # * var.name_prefix = "txtdata-app--"  -->  prefix = "txtdata-app--"   
-  prefix = "${substr(var.name_prefix, -1, 1) == "-" ? substr(var.name_prefix, 0, length(var.name_prefix) - 1) : var.name_prefix}-"
+  prefix = substr(var.name_prefix, -1, 1) == "-" ? substr(var.name_prefix, 0, length(var.name_prefix) - 1) : format("%s-", var.name_prefix)
 
   prefix_length                 = length(local.prefix)
   resource_max_character_length = lookup(local.max_character_length, var.resource_type, 0)
