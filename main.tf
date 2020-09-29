@@ -18,7 +18,7 @@ locals {
   prefix_length                 = length(local.prefix)
   resource_max_character_length = lookup(local.max_character_length, var.resource_type, 0)
 
-  random_max_byte_length = (local.resource_max_character_length - length(local.prefix)) / 2
+  random_max_byte_length = floor((local.resource_max_character_length - length(local.prefix)) / 2)
   random_byte_length     = min(local.max_byte_length, local.random_max_byte_length)
 }
 
