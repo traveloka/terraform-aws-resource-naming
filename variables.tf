@@ -10,6 +10,6 @@ variable "resource_type" {
 
 variable "keepers" {
   description = "Arbitrary map of values that, when changed, will trigger a new id to be generated."
-  type        = map
+  type        = map(any)
   default     = {}
 }
